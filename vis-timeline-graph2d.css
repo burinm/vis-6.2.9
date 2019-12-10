@@ -1,3 +1,4 @@
+@import "../mystyles.css";
 /* override some bootstrap styles screwing up the timelines css */
 
 .vis [class*="span"] {
@@ -1213,70 +1214,3 @@ div.vis-tooltip {
 
   z-index: 5;
 }
-
-/* mystyles.css - pairs with index.html
-  
-    The only style used here is to put components
-    side-by-side in a <div> tag
-
-    <div>
-    [component][component]
-    </div>
-*/
-
-/* How to make <--left   --> right alignment 
-    https://stackoverflow.com/questions/29580266/align-two-divs-horizontally-one-on-extreme-left-and-the-other-on-extreme-right
-*/
-
-div.inline_block {
-    display: inline-block;
-    width: 100%;
-}
-
-div.clear_formatting {
-    /* https://stackoverflow.com/questions/19089933/how-to-position-two-elements-side-by-side-using-css/19090124 */
-    clear: both;
-}
-
-div.farleft {
-    float: left;
-}
-
-div.farright {
-    float: right;
-}
-
-div.middle {
-    float: middle;
-}
-
-div.third {
-    float: left;
-    width: 33%;
-}
-
-div.eightypercent {
-    float: left;
-    width: 80%;
-}
-
-div.twentypercent {
-    float: left;
-    width: 20%;
-}
-
-.outputDisplay {
-    font-size: 30px;
-    margin: 0; //No space between <p> tags
-}
-
-.outputSmallDisplay {
-    font-size: 20px;
-    margin: 0; //No space between <p> tags
-}
-
-
-div#debug_panel {
-    overflow: auto;
-}
-
